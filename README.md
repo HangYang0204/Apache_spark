@@ -17,6 +17,15 @@ To get start with Spark we must first install it on your computer. If you are us
       PATH = ...; %HADOOP_HOME%\bin; 
 5. Go to C:\spark-3.1.1-bin-hadoop2.7\conf\ find config file log4j.properties.template, copy paste and rename as log4j.properties
 6. Open the file and set log4j.rootCategory=ERROR, console
+7. (Updated 2021-04-11): Create new PATH as PYSPARK_PYTHON at "C:\Python\python" (your python bin dir)
+8. (Updated 2021-04-11): Create new PATH as PYSPARK_DRIVER_PYTHON at same directory.
+9. You could also specify the environment variable using python code below:
+      ```python
+            import os     
+            os.environ["SPARK_HOME"] = "C:\spark-3.1.1-bin-hadoop2.7"
+            os.environ["PYSPARK_HOME"] = "C:\Python\python"
+            os.environ["PYSPARK_DRIVER_HOME"] = "C:\Python\python"
+      ```
 
 ### 3. Try it out
 Open the cmd, type pyspark or spark-shell, you should be able to see spark logo pop up in the console. 
