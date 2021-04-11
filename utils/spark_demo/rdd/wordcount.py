@@ -13,6 +13,7 @@ if __name__ == '__main__':
     words = lines.flatMap(lambda line: line.split(" "))
 
     wordCounts = words.countByValue()
+    
     for key in wordCounts:
         print(key, " : ", wordCounts[key])
 
