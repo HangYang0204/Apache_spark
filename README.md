@@ -1,4 +1,4 @@
-## Apache_spark
+## Developing spark applications
 
 To get start with Spark we must first install it on your computer. If you are using Windows like me just follow the following steps:
 
